@@ -9,12 +9,14 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn clean package'
+                // Change "sh" to "bat" for Windows!
+                bat 'mvn clean package'
             }
         }
         stage('Test') {
             steps {
-                sh 'mvn test'
+                // Change "sh" to "bat" for Windows!
+                bat 'mvn test'
             }
         }
     }
