@@ -10,13 +10,13 @@ pipeline {
         stage('Build') {
             steps {
                 // Exact path to your Maven executable on Windows
-                bat '"C:\\apache-maven-3.9.11-bin\\apache-maven-3.9.11\\bin\\mvn" clean package'
+                bat 'mvn" clean package'
             }
         }
         stage('Test') {
             steps {
                 // Exact path for the testing process
-                bat '"C:\\apache-maven-3.9.11-bin\\apache-maven-3.9.11\\bin\\mvn" test'
+                bat 'mvn" test'
             }
         }
     }
