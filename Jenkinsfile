@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Clones your code automatically
-                git branch: 'main', url: 'https://github.com/your-username/sample-app.git'
+                git branch: 'main', url: 'https://github.com/HarishKumar-005/jenkins_ex4.git'
             }
         }
         stage('Build') {
