@@ -10,13 +10,13 @@ pipeline {
         stage('Build') {
             steps {
                 // Change "sh" to "bat" for Windows!
-                bat '"C:\apache-maven-3.9.11-bin\apache-maven-3.9.11\bin\mvn" clean package'
+                bat '"C:\\apache-maven-3.9.11-bin\\apache-maven-3.9.11\\bin\\mvn" clean package'
             }
         }
         stage('Test') {
             steps {
                 // Change "sh" to "bat" for Windows!
-                bat '"C:\apache-maven-3.9.11-bin\apache-maven-3.9.11\bin\mvn" test'
+                bat '"C:\\apache-maven-3.9.11-bin\\apache-maven-3.9.11\\bin\\mvn" test'
             }
         }
     }
